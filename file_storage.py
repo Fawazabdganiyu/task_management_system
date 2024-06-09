@@ -44,7 +44,7 @@ class FileStorage:
                                                      FileStorage.__date_format)
                 task["created_at"] = datetime.strptime(
                     task["created_at"],
-                    FileStorage.__date_forma
+                    FileStorage.__date_format
                 )
         except FileNotFoundError:
             tasks = {}
